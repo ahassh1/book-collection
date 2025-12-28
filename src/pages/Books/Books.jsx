@@ -16,9 +16,11 @@ const Books = ({ data }) => {
     <div>
       <h1 className="p-6 text-center text-3xl font-bold">Books</h1>
       <Suspense fallback={<span>Loading...</span>}>
-        {data.map((singleBook) => (
-          <Book singleBook={singleBook} key={singleBook.bookId}></Book>
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-2 md:space-y-4 gap-4 justify-items-center">
+          {data.map((singleBook) => (
+            <Book singleBook={singleBook} key={singleBook.bookId}></Book>
+          ))}
+        </div>
       </Suspense>
     </div>
   );
