@@ -21,7 +21,7 @@ const Banner = () => {
           id nisi.
         </p>
 
-        <button className="btn bg-[#26CCC2]">Get Started</button>
+        <button className="btn bg-[#26CCC2] text-white">Get Started</button>
       </div>
     </div>
   );
