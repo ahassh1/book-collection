@@ -39,6 +39,12 @@ const Navbar = () => {
                 <a>About</a>
               </li>
             </Link>
+            <Link to="/readList">
+              {" "}
+              <li>
+                <a>Read List</a>
+              </li>
+            </Link>
             <li>
               <a>Listed Books</a>
               <ul className="p-2">
@@ -69,6 +75,12 @@ const Navbar = () => {
             {" "}
             <li>
               <a>About</a>
+            </li>
+          </Link>
+          <Link to="/readList">
+            {" "}
+            <li>
+              <a>Read List</a>
             </li>
           </Link>
           <li>

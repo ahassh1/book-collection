@@ -10,7 +10,7 @@ const getStoredBook = () => {
 
 const addToStoredDB = (id) => {
   const storedBookData = getStoredBook();
-  if (storedBookData.inclueds(id)) {
+  if (storedBookData.includes(id)) {
     alert("This book is already added");
   } else {
     storedBookData.push(id);
@@ -18,4 +18,4 @@ const addToStoredDB = (id) => {
     localStorage.setItem("readList", data);
   }
 };
-export { addToStoredDB };
+export { addToStoredDB, getStoredBook };
